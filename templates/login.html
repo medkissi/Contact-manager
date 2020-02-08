@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6 col-auto ml-2 ">
+        <div class="form-group">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{forms.as_p}}
+                <button class="btn btn-primary" type="submit">Connexion</button>
+    
+                
+                <p class="mt-2" > vous n'avez pas de compte <a href= "{% url 'register' %}"> inscrivez vous</a></p>
+    
+            </form>
+        </div>
+   
+   
+    </div>
+</div>
+    
+{% endblock %}
+    

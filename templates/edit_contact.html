@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body">
+            <form action="" class= "form-group" method="POST">
+                {% csrf_token %}
+                <label for="nom">Nom</label>
+                <input type="text" class="form-control" name="nom" value="{{contact.nom}}">
+
+                <label for="prenom">Prenom</label>
+                <input type="text" class="form-control" name="prenom" value="{{contact.prenom}}">
+
+                <label for="nom">Email</label>
+                <input type="email" class="form-control" name="email" value="{{contact.email}}">
+
+                <label for="nom">Téléphone</label>
+                <input type="text" class="form-control" name="telephone" value="{{contact.telephone}}">
+
+                <button class="btn btn-primary mt-2 type="submit">Enregister</button>
+              
+
+
+            </form>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}

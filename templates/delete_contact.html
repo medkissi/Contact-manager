@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body">
+            <form action="" class= "form-group" method="POST">
+                {% csrf_token %}
+             <div class="alert alert-danger"> êtes vous sûr de vouloir supprimer {{contact}}</div>
+
+                <button class="btn btn-danger " type="submit" >OUI</button>
+                <a href="{%url 'contacts'%}" class="btn btn-info ">NON</a>
+              
+
+            </form>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}
