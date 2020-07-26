@@ -26,7 +26,7 @@ SECRET_KEY = '2$v#anj)5cvbr+nr7-zi0_h3+bd2ko3p5erfwo32*d_$u@2f6^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["gestioncontact.herokuapp.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'repertoire',
     'utilisateurs',
 ]
